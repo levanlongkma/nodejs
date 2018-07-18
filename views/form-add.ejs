@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<style type="text/css" media="screen">
+		input {
+			width: 50% !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form action="http://localhost:3000/add" method="POST" role="form">
+			<legend>Thêm sách</legend>
+		
+			<div class="form-group">
+				<label for="">Mã</label>
+				<input type="text" class="form-control" name="id"  placeholder="Nhập mã" required>
+				<label for="">Tên sách</label>
+				<input type="text" class="form-control" name="name" placeholder="Nhập tên sách">
+				<label for="">Thể loại</label>
+				<input type="text" class="form-control" name="type" placeholder="Nhập thể loại">
+				<label for="">Tên tác giả</label>
+				<input type="text" class="form-control" name="author" placeholder="Nhập tên tác giả ">
+			</div>
+		
+			
+		
+			<button type="submit" name="submit" class="btn btn-primary">Thêm</button>
+		</form>
+	</div>	
+</body>
+</html>

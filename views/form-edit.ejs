@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<style type="text/css" media="screen">
+		input {
+			width: 50% !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form action="http://localhost:3000/edit" method="POST" role="form">
+			<legend>Sửa sách</legend>
+		
+			<div class="form-group">
+				<label for="">Mã</label>
+				<input type="text" class="form-control" name="id" value="<%= data.id %>"  disabled>
+				<label for="">Tên sách</label>
+				<input type="text" class="form-control" name="name" value="<%= data.name %>">
+				<label for="">Thể loại</label>
+				<input type="text" class="form-control" name="type" value="<%= data.type %>">
+				<label for="">Tên tác giả</label>
+				<input type="text" class="form-control" name="author" value="<%= data.author %>">
+			</div>
+		
+			
+		
+			<button type="submit" name="submit" class="btn btn-primary">Lưu</button>
+			<a href="http://localhost:3000/index" title=""><button type="button" name="                 " class="btn btn-danger">Hủy</button></a>
+		</form>
+	</div>	
+</body>
+</html>
